@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Registration</title>
+  <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+	<link rel="stylesheet" type="text/css" href="bootstrap.css">
+</head>
+<body>
+
+<section style="height: 9rem;" class="hero d-flex align-items-center">
+  <div class="container py-5">
+    <div class="d-flex justify-content-center">
+      <h1 class="font-weight-bold fs-1 text-white">Register Your Account</h1>
+    </div>
+  </div>
+</section>
+
+<main style="margin: 25px auto; width: 50rem; height: 50rem; line-height: 2;" class="content bg-light container py-2">
+<form method="post" action="register.php" enctype="multipart/form-data">
+  <div class="form-group">
+    <label for="exampleInputPassword1">Name</label>
+    <input type="text" name="name" class="form-control" id="exampleInputPassword1" required="">
+  </div>
+
+  <div class="form-group">
+    <label for="exampleInputPassword1">E-Mail</label>
+    <input type="text" name="email" class="form-control" id="exampleInputPassword1" required=""> 
+  </div>  
+
+  <div class="form-group">
+    <label for="exampleInputPassword1">Password</label>
+    <input type="password"name="password_1" class="form-control" id="exampleInputPassword1" required="">
+  </div>  
+
+  <div class="form-group">
+    <label for="exampleInputPassword1">Confirm Your Password</label>
+    <input type="password" name="password_2" class="form-control" id="exampleInputPassword1" required="">
+  </div>
+
+  <div class="form-group">
+    <label for="exampleInputPassword1">Gender</label><br>
+    
+    <label class="radio-inline">
+      <input type="radio" name="gender" value="male">&nbsp; Male
+    </label>
+    &nbsp;&nbsp;&nbsp;&nbsp;
+    <label class="radio-inline">
+      <input type="radio" name="gender" value="female">&nbsp; Female
+    </label>
+  </div>
+  
+  <div class="form-group">
+    <label>Upload Your Profile Photo.</label>
+    <input type="file" name="image">
+  </div>
+
+  <div class="form-group">
+      <button type="submit" name="submit" class="btn btn-primary">Save My Data</button><br>
+      <br>  <p>Already Have An Account ?! <a href="login_.php">Login</a></p>  <br>
+  </div>
+</form>
+</main>
+
+</body>
+</html>
